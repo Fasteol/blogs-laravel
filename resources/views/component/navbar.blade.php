@@ -13,13 +13,13 @@
                 <li><a href="{{ route('blogs') }}">Blogs</a></li>
             </ul>
         </div>
-        <a class="btn btn-ghost text-xl ">Sporty Blogs</a>
+        <a class="btn btn-ghost text-xl lg:flex hidden">Sporty Blogs</a>
     </div>
     <div class="navbar-end">
         <label class="input input-bordered flex items-center gap-2">
             <form action="{{ route('blogs.search') }}" method="GET" class="flex items-center gap-2">
                 @csrf
-                <input type="text" name="search" class="grow" placeholder="Search" />
+                <input type="text" name="search" class="w-28" placeholder="Search" />
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                         class="w-4 h-4 opacity-70">
